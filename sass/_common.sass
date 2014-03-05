@@ -35,6 +35,24 @@ body
 	&:active
 		position: relative  
 		top: -1px
+
+.btn-konsult
+	width: 939px
+	height: 124px
+	line-height: 124px
+	margin-left: 35px
+	display: inline-block
+	background-image: url("../img/btn-konsult.jpg")
+	text-align: center
+	color: #ED1C24
+	font-size: 34px
+	font-weight: bold
+	cursor: pointer
+	&:hover
+		background-image: url("../img/btn-konsult_h.jpg")
+	&:active
+		position: relative  
+		top: -1px
 /*------------------------- btn -------------------------*/
 
 /*------------------------- forms -------------------------*/
@@ -137,6 +155,7 @@ body
 // mistake
 .mistake
 	padding: 25px 0 0
+	margin-bottom: 50px
 .mistake__info
 	width: 100%
 	height: 490px
@@ -165,6 +184,54 @@ body
 
 // choose
 .choose
+	margin-bottom: 62px
+.choose__in
+	padding-left: 320px
+	margin-top: 34px
+	margin-bottom: 53px
+	position: relative
+	&:before
+		content: ""
+		width: 221px
+		height: 588px
+		background: url("../img/tree.jpg") 0px  0px no-repeat
+		position: absolute
+		left: 32px
+		top: -34px
 
-	
+// list
+.list
+	li
+		margin-bottom: 6px
+	.list__num
+		width: 36px
+		height: 36px
+		line-height: 36px
+		display: inline-block
+		vertical-align: middle
+		+border-radius(50%)
+		background: #DCDCDE 
+		+g(#ffffff, #aaacaf)
+		border: 5px solid #5aa343
+		+box-shadow(0px 2px 3px rgba(0,0,0, .3), 0px 1px 0px #60913f)
+		text-align: center
+		color: #0B9444
+		font-size: 28px
+	.list__num-info
+		width: 580px
+		display: inline-block
+		vertical-align: middle
+		padding-left: 24px
+		font-size: 24px
+		line-height: 1 
+		color: #603913
+		font-weight: bold
+
+// how-work
+.how-work
+	.h2
+		margin-left: 64px
+		font-size: 55px
+
+
 	
