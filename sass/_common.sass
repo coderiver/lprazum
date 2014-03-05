@@ -1,49 +1,144 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book",arial,sans-serif 
-	
+/*-------------------------  -------------------------*/
+
+/*-------------------------  mixins & extend & var -------------------------*/
+
+/*------------------------- general -------------------------*/
 body
-	font-size: 12px 
+	font-size: 14px 
 	font-family: Arial, sans-serif 
 	line-height: 1.4
+.out 
+.wrap
+	width: 1000px
+	margin: 0 auto
+.h2
+	font-size: 53px
+	color: #009444 
+	text-align: center
+/*------------------------- ico -------------------------*/
+.btn-super
+	margin-top: 40px
+	padding: 11px 0
+	display: inline-block
+	vertical-align: middle
+	text-align: center
+	text-transform: uppercase 
+	text-decoration: none
+	font-weight: bold
+	font-size: 26px
+	color: #ed1c24
+	+s(i-btn)
+	+box
+	&:hover
+		+s(i-btn_h) 
+	&:active
+		position: relative  
+		top: -1px
+/*------------------------- btn -------------------------*/
 
+/*------------------------- forms -------------------------*/
+.input
+	width: 100%
+	height: 32px
+	padding: 5px 10px
+	+border-radius(5px)
+	background: #E9E9EA 
+	+g(#fff, #d2d3d5)
+	+box
+	color: #603813
+.form
+	width: 315px
+	padding: 10px 2px
+	background: #ef4036 
+	border: 4px solid #ed1c24
+	position: relative
+	+border-radius(30px)
+	+box
+	&:before
+		content: ""
+		+s(i-for-noobs)
+		position: absolute
+		left: -87px
+		top: 156px
+.form__title
+	margin: -5px 8px 0
+	font-size: 30px
+	line-height: 1.2 
+	color: #603813
+.form__title-meta 
+	font-size: 24px
+	color: #603913
+	text-align: center
+.form__row
+	margin: 0 5px 1px
+.form__note
+	margin: 10px 10px 0px
+	font-size: 12px
+	color: #603913 
+.label
+	display: block
+	font-size: 18px
+	color: #603813
+/*------------------------- page -------------------------*/
+// advice
+.advice
+	padding: 17px 30px 0 
+	background: #8EC6E8
+	+g(#cbe2eb, #aac2db)
+.advice__title
+	margin-bottom: 22px
+	font-size: 60px
+	text-align: center
+	line-height: 1.2 
+	color: #ED1C24
+.advice__meta
+	margin-bottom: 40px
+	font-size: 42px
+	text-align: center
+	color: #603813
+.advice__wrap
+	+clr
+.advice__media
+	width: 550px
+	margin-top: 20px
+	margin-left: 30px
+	float: left
+	.advice__media-img
+		width: 572px
+		height: 340px
+		margin-bottom: 80px
+		overflow: hidden
+		img
+			width: 100%
+	.advice__media-meta
+		margin: 0 -25px 0
+		font-size: 28px
+		color: #ED1C24
+.advice__form
+	margin-top: -10px
+	margin-right: 20px
+	float: right
+.advice__bottom
+	width: 1000px
+	height: 138px
+	margin-top: 35px
+	background-image: url("../img/grass.png")
+	font-size: 38px
+	color: #FFF
+	font-weight: bold
+	position: relative
+	.advice__bottom-text
+		line-height: 1
+		position: absolute
+		bottom: 5px
+		left: 20px
 
-// common blocks
+// mistake
+.mistake
+	padding: 25px 0 0
+.mistake__info
+	width: 100%
+	height: 480px
+	background: url("../img/mistake-bg.jpg") 52% 11px no-repeat
+	position: relative
+	

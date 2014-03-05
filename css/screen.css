@@ -19,7 +19,60 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; }
+/*-------------------------  ------------------------- */
+/*-------------------------  mixins & extend & var ------------------------- */
+/*------------------------- general ------------------------- */
+body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
+
+.wrap { width: 1000px; margin: 0 auto; }
+
+.h2 { font-size: 53px; color: #009444; text-align: center; }
+
+/*------------------------- ico ------------------------- */
+.btn-super { margin-top: 40px; padding: 11px 0; display: inline-block; vertical-align: middle; text-align: center; text-transform: uppercase; text-decoration: none; font-weight: bold; font-size: 26px; color: #ed1c24; background: url('../img/icons-s4c65bf0835.png') 0 0 no-repeat; width: 300px; height: 96px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.btn-super:hover { background: url('../img/icons-s4c65bf0835.png') 0 -106px no-repeat; width: 300px; height: 96px; }
+.btn-super:active { position: relative; top: -1px; }
+
+/*------------------------- btn ------------------------- */
+/*------------------------- forms ------------------------- */
+.input { width: 100%; height: 32px; padding: 5px 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background: #e9e9ea; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d2d3d5)); background-image: -webkit-linear-gradient(#ffffff, #d2d3d5); background-image: -moz-linear-gradient(#ffffff, #d2d3d5); background-image: -o-linear-gradient(#ffffff, #d2d3d5); background-image: linear-gradient(#ffffff, #d2d3d5); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: #603813; }
+
+.form { width: 315px; padding: 10px 2px; background: #ef4036; border: 4px solid #ed1c24; position: relative; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; -o-border-radius: 30px; border-radius: 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.form:before { content: ""; background: url('../img/icons-s4c65bf0835.png') 0 -212px no-repeat; width: 66px; height: 316px; position: absolute; left: -87px; top: 156px; }
+
+.form__title { margin: -5px 8px 0; font-size: 30px; line-height: 1.2; color: #603813; }
+
+.form__title-meta { font-size: 24px; color: #603913; text-align: center; }
+
+.form__row { margin: 0 5px 1px; }
+
+.form__note { margin: 10px 10px 0px; font-size: 12px; color: #603913; }
+
+.label { display: block; font-size: 18px; color: #603813; }
+
+/*------------------------- page ------------------------- */
+.advice { padding: 17px 30px 0; background: #8ec6e8; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cbe2eb), color-stop(100%, #aac2db)); background-image: -webkit-linear-gradient(#cbe2eb, #aac2db); background-image: -moz-linear-gradient(#cbe2eb, #aac2db); background-image: -o-linear-gradient(#cbe2eb, #aac2db); background-image: linear-gradient(#cbe2eb, #aac2db); }
+
+.advice__title { margin-bottom: 22px; font-size: 60px; text-align: center; line-height: 1.2; color: #ed1c24; }
+
+.advice__meta { margin-bottom: 40px; font-size: 42px; text-align: center; color: #603813; }
+
+.advice__wrap { *zoom: 1; }
+.advice__wrap:after { content: " "; display: table; clear: both; }
+
+.advice__media { width: 550px; margin-top: 20px; margin-left: 30px; float: left; }
+.advice__media .advice__media-img { width: 572px; height: 340px; margin-bottom: 80px; overflow: hidden; }
+.advice__media .advice__media-img img { width: 100%; }
+.advice__media .advice__media-meta { margin: 0 -25px 0; font-size: 28px; color: #ed1c24; }
+
+.advice__form { margin-top: -10px; margin-right: 20px; float: right; }
+
+.advice__bottom { width: 1000px; height: 138px; margin-top: 35px; background-image: url("../img/grass.png"); font-size: 38px; color: white; font-weight: bold; position: relative; }
+.advice__bottom .advice__bottom-text { line-height: 1; position: absolute; bottom: 5px; left: 20px; }
+
+.mistake { padding: 25px 0 0; }
+
+.mistake__info { width: 100%; height: 480px; background: url("../img/mistake-bg.jpg") 52% 11px no-repeat; position: relative; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
