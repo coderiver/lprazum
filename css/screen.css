@@ -123,7 +123,14 @@ body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 .expert ul:before { content: ""; width: 215px; height: 405px; background: url("../img/2.jpg") 0px 0px no-repeat; position: absolute; left: 32px; top: -26px; }
 .expert ul li { margin-bottom: 5px; font-size: 26px; font-weight: bold; color: #603913; }
 
+.customers { margin-bottom: 70px; }
 .customers .h2 { font-size: 64px; }
+.customers .customers__list { margin-top: 52px; margin-left: 28px; }
+.customers ul { *zoom: 1; }
+.customers ul:after { content: " "; display: table; clear: both; }
+.customers li { float: left; }
+
+.customers__bottom { width: 975px; height: 162px; background: url("../img/label.jpg") 16px -9px no-repeat; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
