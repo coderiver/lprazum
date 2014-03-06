@@ -123,7 +123,7 @@ body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 .expert ul:before { content: ""; width: 215px; height: 405px; background: url("../img/2.jpg") 0px 0px no-repeat; position: absolute; left: 32px; top: -26px; }
 .expert ul li { margin-bottom: 5px; font-size: 26px; font-weight: bold; color: #603913; }
 
-.customers { margin-bottom: 70px; }
+.customers { margin-bottom: 62px; }
 .customers .h2 { font-size: 64px; }
 .customers .customers__list { margin-top: 52px; margin-left: 28px; }
 .customers ul { *zoom: 1; }
@@ -131,6 +131,24 @@ body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 .customers li { float: left; }
 
 .customers__bottom { width: 975px; height: 162px; background: url("../img/label.jpg") 16px -9px no-repeat; }
+
+.reg-i { *zoom: 1; }
+.reg-i:after { content: " "; display: table; clear: both; }
+
+.reg__info { width: 650px; float: left; }
+.reg__info .h2 { margin-left: 23px; margin-bottom: 29px; font-size: 64px; }
+
+.reg__form { width: 314px; margin: 0 17px; float: left; }
+
+.reg__info-note { margin-bottom: 46px; font-size: 32px; line-height: 1.2; color: #603913; font-weight: bold; text-align: center; }
+
+.reg__info-time { margin-bottom: 70px; margin-left: 123px; font-size: 84px; color: #f15a29; font-weight: bold; }
+
+.reg__info-contact { font-size: 28px; color: #ed1c24; font-weight: bold; }
+
+.reg__bottom { width: 1000px; height: 138px; margin-top: 31px; margin-left: auto; margin-right: auto; background-image: url("../img/grass.png"); font-size: 45px; color: white; font-weight: bold; position: relative; }
+
+.reg__bottom-text { font-size: 58px; line-height: 1; font-weight: normal; position: absolute; bottom: 0px; left: 111px; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
